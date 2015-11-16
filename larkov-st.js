@@ -47,7 +47,7 @@ LarkovSt.prototype.postProcess = function(generated){
 	     splitJoin('``','"'),
 	     splitJoin('\'\'','"'),
 	     splitJoin("did n't", "didn't"),
-	     splitJoin('*NL*','\n'),
+	     splitJoin('*NL*','\n\n'),
 	     splitJoin(' \'','\''))(out);
 }
 

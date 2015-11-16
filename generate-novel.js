@@ -69,12 +69,12 @@ Promise.all([pCorpus(), pTitleGenerator(titleFile)])
 	    wc = wc + simpleWC(contents);
 	    console.log('current wc:', wc);
 	}
-	fs.writeFile(outputDir+'/dream-speeches.txt', transcript.join('\n'), function(err){
+	fs.writeFile(outputDir+'/dreams-before-speeches.txt', 'DREAMS BEFORE SPEECHES\n A PROCEDURAL NOVEL\n VINCENT TOUPS\n NOVEMBER 201n\n'+transcript.join('\n'), function(err){
 	    if(err instanceof Error){
-		console.log('Failure writing:', outputDir+'/dream-speeches.txt');		
+		console.log('Failure writing:', outputDir+'/dreams-before-speeches.txt');		
 		throw err;
 	    } else {
-		console.log('Wrote ', outputDir+'/dream-speeches.txt');
+		console.log('Wrote ', outputDir+'/dreams-before-speeches.txt');
 	    }
 	})
 	
